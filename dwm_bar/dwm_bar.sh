@@ -1,5 +1,5 @@
 LOC=$(readlink -f "$0")
-DIR=$(dirname "$LOC")
+DIR=/home/terryfung/github/dwm/dwm_bar
 
 # Define open/close tag
 export open_tag="["
@@ -10,16 +10,16 @@ export close_tag="]"
 . "$DIR/modules/dwm_keyboards.sh"
 . "$DIR/modules/dwm_resources.sh"
 
-parallelize() {
-    while true
-    do
-        printf "Running parallel processes\n"
-        #dwm_networkmanager &
-        #dwm_weather &
-        sleep 5
-    done
-}
-parallelize &
+#parallelize() {
+#    while true
+#    do
+#        printf "Running parallel processes\n"
+#        #dwm_networkmanager &
+#        #dwm_weather &
+#        sleep 5
+#    done
+#}
+#parallelize &
 
 # Update dwm status bar every second
 while true
